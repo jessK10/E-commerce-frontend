@@ -1,0 +1,82 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.navbar, body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+/* App.css or Navbar.css */
+.nav-link {
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #0d6efd !important; /* Nice Bootstrap blue glow */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 12px #0d6efd;
+  transform: scale(1.05);
+}
+/* App.css */
+
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeZoomIn {
+  animation: fadeZoomIn 0.8s ease forwards;
+}
+
+
